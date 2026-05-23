@@ -7,7 +7,7 @@ function Footer() {
           Brittany Chiang
         </a>.
       </p>
-      <p className="footer-copyright">&copy; {new Date().getFullYear()} Mahmoud</p>
+      <p className="footer-copyright">&copy; {new Date().getFullYear()} Mah Moud</p>
     </footer>
   );
 }
