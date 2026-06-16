@@ -180,7 +180,6 @@
 
 .project-card:hover {
   border-color: var(--green);
-  background-color: var(--green-tint);
 }
 
 .project-image {
@@ -240,6 +239,58 @@
   color: var(--light-slate);
 }
 
+.project-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.project-button {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--lightest-slate);
+  padding: 6px 10px;
+  border: 1px solid var(--lightest-navy);
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.25s ease;
+  background: var(--green-tint);
+  cursor: pointer;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-color: var(--lightest-navy);
+}
+
+.project-button.demo {
+  /* background: var(--green); */
+  /* color: #0a192f; */
+  width: 75.2px;
+  height: 33.6px;
+  text-align: center;
+  justify-content: center;
+}
+
+.project-button:hover {
+  border-color: var(--green);
+  color: var(--green);
+  background-color: var(--green-tint);
+  transform: translateY(-2px);
+}
+
+.project-button.demo svg {
+  transition: transform 0.2s ease;
+}
+
+.project-button.demo:hover svg {
+  transform: translateY(-2px);
+}
+
+.project-button.demo:hover {
+  /* color: var(--green); */
+  transform: translateY(-2px);
+}
+
 /* ── Footer ── */
 .footer {
   display: flex;
@@ -262,6 +313,7 @@
   .app {
     grid-template-columns: 1fr;
   }
+
   .left-panel {
     position: static;
     height: auto;
@@ -272,27 +324,34 @@
     gap: 16px;
     border-bottom: 1px solid var(--lightest-navy);
   }
+
   .left-top {
     flex-direction: row;
     align-items: baseline;
     gap: 12px;
   }
+
   .left-name {
     font-size: 28px;
   }
+
   .left-tagline {
     font-size: 12px;
   }
+
   .left-nav {
     flex-direction: row;
     gap: 20px;
   }
+
   .left-social {
     margin-left: auto;
   }
+
   .right-content {
     padding: 40px 24px;
   }
+
   .section-heading::after {
     width: 80px;
   }
@@ -302,10 +361,13 @@
   .project-card {
     flex-direction: column;
   }
+
   .project-image {
     width: 100%;
     height: 100px;
+    object-fit: cover;
   }
+
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
